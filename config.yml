@@ -1,0 +1,7 @@
+---
+active_modules: [pygments, tags, blog, latex]
+author: MagicSword
+canonical_url: http://magicsword.github.com/
+modules:
+  pygments:
+    style: tango
