@@ -4,9 +4,9 @@
     <meta charset=utf-8>
   {% block htmlhead %}
     <title>{% block title %}Home{% endblock %} | Magicsword Blog</title>
-    <link href="http://fonts.googleapis.com/css?family=Vollkorn&subset=latin" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/static/css/style.css" type="text/css">
-    <link href="/feed.atom" rel="alternate" title="Recent Blog Posts" type="application/atom+xml">
+    <link href="/feed.atom" rel="alternate" title="最近文章" type="application/atom+xml">
     {%- for link in links %}
     <link rel="{{ link.rel }}" href="{{ link.href }}"{%
       if link.media %} media="{{ link.media }}"{% endif %} type="{{ link.type }}">
@@ -16,7 +16,7 @@
   <body>
     <div class=container>
       <div class=header>
-        <a href="/about/">the Author</a>'s blog
+          <a href="/about/">MagicSword</a>'s blog
       </div>
       <div class=navigation>
         <ul>
@@ -24,7 +24,6 @@
           <li><a href="/archive/">archive</a>
           <li><a href="/tags/">tags</a>
           <li><a href="/projects/">projects</a>
-          <li><a href="/talks/">talks</a>
           <li><a href="/about/">about</a>
         </ul>
       </div>
@@ -32,16 +31,16 @@
       {% block body %}{% endblock %}
       </div>
       <div class=footer>
-        <p>&copy; Copyright {{ format_date(format='YYYY') }} by Author.
+        <p>&copy; Copyright {{ format_date(format='YYYY') }} by MagicSword.
         <p>
           Content licensed under the Creative Commons
           attribution-noncommercial-sharealike License.
         <p>
-          Contact me via <a href="mailto:ming927@spp.url.com.tw">mail</a>,
+          Contact<a href="mailto:ming927@spp.url.com.tw">mail</a>,
           <a href="http://twitter.com/magicsword">twitter</a>,
           <a href="http://github.com/magicsword">github</a> or
           <a href="http://bitbucket.org/magicsword">bitbucket</a>.
-        (<a href="/feed.atom" rel="alternate" title="Recent Blog Posts">feed</a>)
+        (<a href="/feed.atom" rel="alternate" title="最近文章">feed</a>)
       </div>
     </div>
     </body>
